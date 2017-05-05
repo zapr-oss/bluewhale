@@ -3,12 +3,12 @@ Welcome to project BlueWhale
 
 BlueWhale provides a lightweight in-memory cache which acts as a data container for various datasources. 
 
-###What is BlueWhale?
+### What is BlueWhale?
 
 BlueWhale is an embeddable key-value based cache populated automatically from data stores like MySQL, Aerospike and File. 
 It has both thread-safe and unsafe versions.
 
-###What is it suitable for?
+### What is it suitable for?
 BlueWhale provides fast key-value based lookup cache over persistent data stores, which needs to be refreshed periodically.
 
 **Notes**:
@@ -16,7 +16,7 @@ BlueWhale provides fast key-value based lookup cache over persistent data stores
 2. For updatable cache, we need to provision twice the memory. For frequently updating caches it is the responsibility of the client to atomically replace cache instance, which is provided in the request context. 
 3. For updatable cache construction we need to provision memory factoring in the new cache size in addition to the existing one.
 
-###Interfaces and APIs:
+### Interfaces and APIs:
 
 Bluewhale currently supports following types of data sources. Each has an interface called addEntry, which has to be implemented.
 `addEntry` will need to have mapper to the User-specific domain POJOs. 
